@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ana Marisa</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500&display=swap");
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
+    </style>
+    <script src="https://kit.fontawesome.com/66d1df4e05.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- Landing Page -->
+    <header>
+      <nav class="navbar">
+        <div class="logo" id="#hero"><a href="#hero">Ana Marisa</a></div>
+        <ul class="links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+        </ul>
+        <div class="toggle_btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+
+      <div class="dropdown_menu">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="https://www.linkedin.com/in/ana-m-039135131/" class="action_btn">Contact Me</a></li>
+      </div>
+    </header>
+
+    <section id="hero">
+      <h1>Welcome, everyone!</h1>
+      <p>I'm thrilled to have you here and excited to share my passion for web development with you. This portfolio represents a culmination of my hard work, dedication, and creativity in building dynamic, user-friendly websites</p>
+      <a class="btn" href="https://www.linkedin.com/in/ana-m-039135131/">Contact Me</a>
+    </section>
+
+    <section id="about">
+      <div class="about-wrapper">
+        <div class="p1-content">
+          <h2>About Me</h2>
+          <p>
+            A recent IT graduate with a passion for web development. I have always been fascinated by the power of technology and the endless possibilities that come with it. My curiosity led me to pursue a degree in IT, with a focus on web
+            development.
+          </p>
+        </div>
+        <div class="p2-content">
+          <h2>Find me on social networks</h2>
+          <p>You can find me on these social platforms below. Looking forward to seeing your updates!</p>
+          <div class="icon-wrapper">
+            <a href="https://instagram.com/jackayees"><i class="fa-brands fa-instagram"></i></a> <a href="https://www.linkedin.com/in/ana-m-039135131/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/AnaMarisa"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <div class="block-content">
+        <h2>Recent Works</h2>
+        <p>
+          Take a look around and explore the projects I've completed, the technologies I've worked with, and the skills I've acquired along the way. I hope you find inspiration in my work, and please don't hesitate to reach out to me with
+          any questions or collaboration opportunities. Thank you for visiting!
+        </p>
+      </div>
+    </section>
+
+    <main class="project-container">
+      <div class="cc-card-1">
+        <div class="card-image card-1"></div>
+        <h5 class="card-title">Website Coffee Shop <i class="rich-text">Kosa Coffee</i></h5>
+        <p class="card-text">
+          The self-order web application is a user-friendly platform designed for customers to place orders and make payments without requiring the assistance of an employee. The application is developed using Bootstrap on the front-end,
+          Laravel & JavaScript on the back-end, while the application's data is stored in MySQL.
+        </p>
+      </div>
+      <div class="cc-card-2">
+        <div class="card-image card-2"></div>
+        <h5 class="card-title">E-Learning</h5>
+        <p class="card-text">The website is created as a project with Udemy, a popular e-learning platform that offers various online courses. The website is developed using HTML and CSS flexbox property.</p>
+      </div>
+    </main>
+    <!-- End of Projects -->
+
+    <!-- Footer -->
+    <section class="footer">
+      <div class="footer-wrapper">
+        <p class="footer-text">Banten, Indonesia</p>
+        <p class="footer-text">ana.marisa.mf@gmail.com</p>
+        <div class="icon-wrapper">
+          <a href="https://instagram.com/jackayees"><i class="fa-brands fa-instagram"></i></a> <a href="https://www.linkedin.com/in/ana-m-039135131/"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/AnaMarisa"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const toggleBtn = document.querySelector(".toggle_btn");
+      const toggleBtnIcon = document.querySelector(".toggle_btn i");
+      const dropDownMenu = document.querySelector(".dropdown_menu");
+
+      toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle("open");
+        // const isOpen = dropDownMenu.classList.contains("open");
+
+        // toggleBtn.classList = isOpen ? "fa-solid fa-xmark" : "fa-solid fa-bars";
+      };
+    </script>
+  </body>
+</html>
