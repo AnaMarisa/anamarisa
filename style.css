@@ -357,6 +357,10 @@ i {
   .projects .row {
     flex-wrap: wrap;
   }
+
+  i {
+    font-size: 1.4rem;
+  }
 }
 
 /* Handphone */
@@ -371,7 +375,7 @@ i {
   }
 
   .hero {
-    height: calc(100vh - 30px);
+    height: 100vh;
   }
 
   .hero .content {
@@ -405,6 +409,10 @@ i {
 
   .footer-text {
     margin-bottom: 20px;
+  }
+
+  i {
+    font-size: 1.3rem;
   }
 }
 
