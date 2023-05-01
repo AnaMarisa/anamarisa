@@ -42,22 +42,25 @@
       </div>
     </header>
 
-    <section id="hero">
-      <h1>Welcome, everyone!</h1>
-      <p>I'm thrilled to have you here and excited to share my passion for web development with you. This portfolio represents a culmination of my hard work, dedication, and creativity in building dynamic, user-friendly websites</p>
-      <a class="btn" href="https://www.linkedin.com/in/ana-m-039135131/">Contact Me</a>
+    <section class="hero" id="hero">
+      <div class="content">
+        <h1>Welcome, everyone!</h1>
+        <p>I'm thrilled to have you here and excited to share my passion for web development with you. This portfolio represents a culmination of my hard work, dedication, and creativity in building dynamic, user-friendly websites</p>
+        <a class="cta" href="https://www.linkedin.com/in/ana-m-039135131/">Contact Me</a>
+      </div>
     </section>
 
-    <section id="about">
+    <!-- About Section start -->
+    <section id="about" class="about">
       <div class="about-wrapper">
-        <div class="p1-content">
+        <div class="about-content">
           <h2>About Me</h2>
           <p>
             A recent IT graduate with a passion for web development. I have always been fascinated by the power of technology and the endless possibilities that come with it. My curiosity led me to pursue a degree in IT, with a focus on web
             development.
           </p>
         </div>
-        <div class="p2-content">
+        <div class="about-content">
           <h2>Find me on social networks</h2>
           <p>You can find me on these social platforms below. Looking forward to seeing your updates!</p>
           <div class="icon-wrapper">
@@ -69,7 +72,7 @@
     </section>
 
     <!-- Projects -->
-    <section id="projects">
+    <section id="projects" class="projects">
       <div class="block-content">
         <h2>Recent Works</h2>
         <p>
@@ -77,23 +80,27 @@
           any questions or collaboration opportunities. Thank you for visiting!
         </p>
       </div>
+      <div class="row">
+        <div class="column">
+          <div class="row-img">
+            <img src="img/pr-1.png" alt="Project1" class="responsive" />
+          </div>
+          <div class="row-text">
+            <h5 class="card-title">Website Coffee Shop Kosa Coffee</h5>
+            <p class="card-text">The self-order web application is a user-friendly platform designed for customers to place orders and make payments without requiring the assistance of an employee.</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="row-img">
+            <img src="img/pr-2.png" alt="Project2" class="responsive" />
+          </div>
+          <div class="row-text">
+            <h5 class="card-title">E-Learning</h5>
+            <p class="card-text">The website is created as a project with Udemy, a popular e-learning platform that offers various online courses. The website is developed using HTML and CSS flexbox property.</p>
+          </div>
+        </div>
+      </div>
     </section>
-
-    <main class="project-container">
-      <div class="cc-card-1">
-        <div class="card-image card-1"></div>
-        <h5 class="card-title">Website Coffee Shop <i class="rich-text">Kosa Coffee</i></h5>
-        <p class="card-text">
-          The self-order web application is a user-friendly platform designed for customers to place orders and make payments without requiring the assistance of an employee. The application is developed using Bootstrap on the front-end,
-          Laravel & JavaScript on the back-end, while the application's data is stored in MySQL.
-        </p>
-      </div>
-      <div class="cc-card-2">
-        <div class="card-image card-2"></div>
-        <h5 class="card-title">E-Learning</h5>
-        <p class="card-text">The website is created as a project with Udemy, a popular e-learning platform that offers various online courses. The website is developed using HTML and CSS flexbox property.</p>
-      </div>
-    </main>
     <!-- End of Projects -->
 
     <!-- Footer -->
