@@ -145,7 +145,6 @@ header {
   justify-content: center;
   text-align: center;
   color: #fff;
-  position: relative;
 }
 
 .hero::after {
