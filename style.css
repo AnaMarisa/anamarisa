@@ -34,7 +34,8 @@ a {
 }
 
 a:hover {
-  color: rgb(73, 100, 153);
+  color: rgb(64, 89, 139);
+  font-weight: 500;
 }
 
 a:hover::after {
@@ -111,7 +112,7 @@ header {
   width: 300px;
   font-weight: 400;
   background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(15px);
+  backdrop-filter: blur(30px);
   border-radius: 10px;
   overflow: hidden;
   transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -267,6 +268,11 @@ header {
   color: #fff;
 }
 
+.column-1 {
+  flex: 50%;
+  margin-bottom: 15px;
+}
+
 .column {
   flex: 50%;
 }
@@ -291,6 +297,10 @@ p.card-text {
   margin-top: 15px;
   margin-bottom: 20px;
   width: 95%;
+}
+
+.chevron-icon {
+  font-size: 8px;
 }
 
 /* FOOTER */
@@ -391,7 +401,11 @@ i {
   }
 
   p.card-text {
-    margin-bottom: 15px;
+    margin: 10px 0 0 0;
+  }
+
+  p.row-text-1 {
+    margin-bottom: 10px;
   }
 
   .footer-wrapper {
