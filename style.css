@@ -259,6 +259,7 @@ header {
 
 .projects .row {
   display: flex;
+  flex-wrap: wrap;
   width: 80%;
   margin: auto;
   justify-content: space-around;
@@ -288,6 +289,7 @@ p.card-text {
   font-size: 1rem;
   font-weight: 300;
   margin-top: 15px;
+  margin-bottom: 20px;
   width: 95%;
 }
 
