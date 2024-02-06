@@ -1,0 +1,383 @@
+:root {
+  --bg-color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap");
+
+body {
+  height: 100vh;
+  background-color: var(--bg-color);
+  background-image: url("https://images.unsplash.com/photo-1533109721025-d1ae7ee7c1e1?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Text */
+.icon-wrapper i {
+  font-size: 20px;
+}
+
+.navbar-extra i {
+  color: #000;
+}
+
+.icon-wrapper i:hover {
+  color: rgb(210, 81, 145);
+}
+
+.footer-wrapper p {
+  font-size: 14px;
+}
+
+.hero .content h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+.hero .content p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  width: 80%;
+  margin: 10px auto;
+}
+
+.h2-text {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.p-text {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/* Button */
+.btn-contact {
+  background-color: rgb(210, 81, 145);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  padding: 12px 38px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 4px 2px;
+  transition: 0.3s;
+}
+
+.btn-contact:hover {
+  background-color: #ddd;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: #000;
+}
+
+.btn-project {
+  display: inline-block;
+  background-color: rgb(210, 81, 145);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.btn-project:hover {
+  background-color: #ddd;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: #000;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: #fff;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-wrapper {
+  width: 100%;
+  padding: 10px;
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.navbar a:hover {
+  color: rgb(210, 81, 145) !important;
+}
+
+.navbar .navbar-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.navbar .navbar-extra .navbar-links a {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0 1.5rem;
+}
+
+.navbar .navbar-links a:hover {
+  color: rgb(210, 81, 145);
+}
+
+.navbar .navbar-links a::after {
+  content: "";
+  display: flex;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid rgb(210, 81, 145);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-links a:hover::after {
+  transform: scaleX(0.8);
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+}
+
+.navbar .navbar-extra a {
+  color: #000;
+  margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover {
+  color: rgb(210, 81, 145);
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+#hamburger-menu.active {
+  z-index: 1100;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  color: #fff;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background: linear-gradient(0deg, rgba(1, 1, 3, 1) 10%, rgba(255, 255, 255, 0) 50%);
+}
+
+.hero .content {
+  width: 60rem;
+}
+
+/* ABOUT */
+.about {
+  background-color: var(--bg-color);
+}
+
+.about-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  color: white;
+}
+
+/* SKILLS */
+.skills .skill {
+  background-color: #ddd;
+  border: none;
+  color: #636363;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.skills .skill:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: rgb(210, 81, 145);
+  color: white;
+}
+
+/* PROJECTS */
+.projects {
+  background-color: var(--bg-color);
+}
+
+/* CARDS */
+.card-wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+}
+
+.card-title {
+  color: #000;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.card-text {
+  font-size: 1rem;
+  font-weight: 400;
+  width: 100%;
+}
+
+p.card-text {
+  margin: 0;
+}
+
+h5.card-title {
+  margin: 0;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #000;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.footer-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-wrapper li a {
+  color: #fff;
+}
+
+/* Media Queries */
+/* Laptop */
+/* @media (min-width: 769px) {
+  #hamburger-menu {
+    display: none;
+  }
+
+  #hamburger-menu.active {
+    z-index: 1100;
+  }
+} */
+
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    box-sizing: border-box;
+  }
+
+  #hamburger-menu {
+    display: inline-block !important;
+    color: rgb(180, 117, 117);
+    cursor: pointer;
+  }
+
+  .navbar .navbar-links {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #fff;
+    width: 100%;
+    transition: 0.3s;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .navbar .navbar-links.active {
+    right: 0;
+    z-index: 1000;
+  }
+
+  .navbar .navbar-links a {
+    color: #000;
+    display: block;
+    padding: 8px;
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+
+  .navbar .navbar-extra i {
+    font-size: 1.4rem;
+  }
+
+  .about-content h2 {
+    margin-top: 1.875rem;
+  }
+}
+
+/* Handphone */
+@media only screen and (max-width: 480px) {
+  html {
+    max-width: 100%;
+  }
+
+  .navbar-extra {
+    font-size: 12px;
+  }
+
+  .hero {
+    height: 100vh;
+  }
+
+  .hero .content {
+    width: 100%;
+  }
+
+  .hero .content h1 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .hero .content h1 {
+    font-size: 32px;
+  }
+
+  .hero .content p {
+    font-size: 14px;
+  }
+
+  .about-wrapper {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  i {
+    font-size: 1.3rem;
+  }
+}
